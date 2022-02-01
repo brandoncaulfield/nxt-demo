@@ -82,27 +82,34 @@ const MediumDialog = () => {
         <DialogContent>
           <Typography variant="body1" gutterBottom>
             Creating and training an artificially intelligent digital version of
-            yourself that runs on your mobile device • Each SAP app running on a
-            persons mobile device will have the ability to learn from a users
-            unique behaviour and over time present data from SAP to them as they
-            would search for it on their own. • Through machine learning build a
-            model of the users interactions and preferences on the device itself
-            (what data they search for and when during the day) and use that
-            model to pull data from SAP's API's and present it in a meaningful
-            way as its needed. • Using the security built into the mobile device
-            (Apple's FaceID or fingerprint sensor) and use that to form strong
-            security and facilitate proper data authorisation seamlessly. •
-            Users privacy is carefully respected as all "learned behaviour" is
-            stored on the device itself and data from SAP's extenral API's is
-            seamlessly integrated into the users daily workflow. • Each app/
-            micro service has the capability for the user to “train” it to
-            automate the mundane tasks for each of these services Connecting SAP
-            access and authorization to fingerprint and facial recognition on
-            devices like an iPhone
+            yourself that runs on your mobile device
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            Each SAP app running on a persons mobile device will have the
+            ability to learn from a users unique behaviour and over time present
+            data from SAP to them as they would search for it on their own.
+            Through machine learning build a model of the users interactions and
+            preferences on the device itself (what data they search for and when
+            during the day) and use that model to pull data from SAP's API's and
+            present it in a meaningful way as its needed.
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            Using the security built into the mobile device (Apple's FaceID or
+            fingerprint sensor) and use that to form strong security and
+            facilitate proper data authorisation seamlessly. • Users privacy is
+            carefully respected as all "learned behaviour" is stored on the
+            device itself and data from SAP's extenral API's is seamlessly
+            integrated into the users daily workflow.
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            Each app or micro service has the capability for the user to “train”
+            it to automate the mundane tasks for each of these services whilst
+            connecting SAP access and authorization to fingerprint and facial
+            recognition on the devices themselves.
           </Typography>
           <Grid container>
             <Grid item xs>
-              <Typography variant="body1" gutterBottom>
+              <Typography variant="subtitle2" gutterBottom>
                 SAP apps will learn from a users unique behaviour and over time
                 present data from SAP to them as they would search for it on
                 their own
@@ -112,7 +119,7 @@ const MediumDialog = () => {
               Seamless Integration
             </Divider>
             <Grid item xs>
-              <Typography variant="body1" gutterBottom>
+              <Typography variant="subtitle2" gutterBottom>
                 Using secure authenitcation, pull data from SAP's API's and
                 digest it into meaningfull data before passing it back to the
                 user
