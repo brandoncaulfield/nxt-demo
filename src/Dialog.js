@@ -109,7 +109,7 @@ const MediumDialog = () => {
             fingerprint sensor) and use that to form strong security and
             facilitate proper data authorisation seamlessly. Users privacy is
             carefully respected as all "learned behaviour" is stored on the
-            device itself and data from SAP's extenral API's is seamlessly
+            device itself and data from SAP's external API's is seamlessly
             integrated into the users daily workflow.
           </Typography>
           <Typography variant="body1" gutterBottom>
@@ -121,7 +121,7 @@ const MediumDialog = () => {
           <Grid container>
             <Grid item xs>
               <Typography variant="subtitle2" gutterBottom>
-                SAP apps will learn from a users unique behaviour and over time
+                SAP apps will learn from a user’s unique behaviour and over time
                 present data from SAP to them from anywhere in the world.
               </Typography>
             </Grid>
@@ -130,8 +130,8 @@ const MediumDialog = () => {
             </Divider>
             <Grid item xs>
               <Typography variant="subtitle2" gutterBottom>
-                Using secure authenitcation, pull data from SAP's API's and
-                digest it into meaningfull data before passing it back to the
+                Using secure authentication, pull data from SAP's API's and
+                digest it into meaningful data before passing it back to the
                 user.
               </Typography>
             </Grid>
