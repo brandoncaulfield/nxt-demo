@@ -13,6 +13,8 @@ import { styled } from "@mui/material/styles";
 import MuiGrid from "@mui/material/Grid";
 import { Public } from "@mui/icons-material";
 
+import SAP2 from "./SAP2.png";
+
 const Grid = styled(MuiGrid)(({ theme }) => ({
   width: "100%",
   ...theme.typography.body2,
@@ -53,7 +55,7 @@ const MediumDialog = () => {
           color: "text.primary",
           //   borderRadius: 1,
           p: 3,
-          justifyContent: "center",
+          //   justifyContent: "center",
           display: "flex",
         }}
       >
@@ -67,6 +69,7 @@ const MediumDialog = () => {
             color: "text.primary",
             //   borderRadius: 1,
             // p: 3,
+
             justifyContent: "center",
             display: "flex",
           }}
@@ -75,6 +78,7 @@ const MediumDialog = () => {
         >
           Click here
         </Button>
+        {/* <img src={SAP2} alt="SAP2" /> */}
       </Box>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Concept of Me with a Focus on Mobility</DialogTitle>
