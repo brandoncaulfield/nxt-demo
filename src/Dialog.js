@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import { styled } from "@mui/material/styles";
 import MuiGrid from "@mui/material/Grid";
-import { AccessAlarm, ThreeDRotation } from "@mui/icons-material";
+import { Public } from "@mui/icons-material";
 
 const Grid = styled(MuiGrid)(({ theme }) => ({
   width: "100%",
@@ -60,7 +60,6 @@ const MediumDialog = () => {
         <Typography variant="h6" gutterBottom>
           Take a glimpse into the future of SAP
         </Typography>
-        <AccessAlarm />
         <Button
           sx={{
             bgcolor: "background.default",
@@ -79,11 +78,19 @@ const MediumDialog = () => {
       </Box>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Concept of Me with a Focus on Mobility</DialogTitle>
+
         <DialogContent>
           <Typography variant="body1" gutterBottom>
             Creating and training an artificially intelligent digital version of
-            yourself that runs on your mobile device
+            yourself that runs on your mobile device allowing you to work and
+            stay connected from anywhere in the world
           </Typography>
+          <Divider orientation="horizontal" flexItem>
+            <Public
+              fontSize="large"
+              sx={{ justifyContent: "center", display: "flex" }}
+            />
+          </Divider>
           <Typography variant="body1" gutterBottom>
             Each SAP app running on a persons mobile device will have the
             ability to learn from a users unique behaviour and over time present
@@ -96,7 +103,7 @@ const MediumDialog = () => {
           <Typography variant="body1" gutterBottom>
             Using the security built into the mobile device (Apple's FaceID or
             fingerprint sensor) and use that to form strong security and
-            facilitate proper data authorisation seamlessly. • Users privacy is
+            facilitate proper data authorisation seamlessly. Users privacy is
             carefully respected as all "learned behaviour" is stored on the
             device itself and data from SAP's extenral API's is seamlessly
             integrated into the users daily workflow.
@@ -111,8 +118,7 @@ const MediumDialog = () => {
             <Grid item xs>
               <Typography variant="subtitle2" gutterBottom>
                 SAP apps will learn from a users unique behaviour and over time
-                present data from SAP to them as they would search for it on
-                their own
+                present data from SAP to them from anywhere in the world.
               </Typography>
             </Grid>
             <Divider orientation="vertical" flexItem>
@@ -122,7 +128,7 @@ const MediumDialog = () => {
               <Typography variant="subtitle2" gutterBottom>
                 Using secure authenitcation, pull data from SAP's API's and
                 digest it into meaningfull data before passing it back to the
-                user
+                user.
               </Typography>
             </Grid>
           </Grid>
