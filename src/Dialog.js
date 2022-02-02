@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import { styled } from "@mui/material/styles";
 import MuiGrid from "@mui/material/Grid";
-import { Public } from "@mui/icons-material";
+import { Public, AssignmentInd, Devices } from "@mui/icons-material";
 
 import SAP2 from "./SAP2.png";
 
@@ -48,46 +48,65 @@ const MediumDialog = () => {
 
   return (
     <div>
-      <Box
-        sx={{
-          //   bgcolor: "background.default",
-          bgcolor: "#000011",
-          color: "text.primary",
-          //   borderRadius: 1,
-          p: 3,
-          //   justifyContent: "center",
-          display: "flex",
-        }}
-      >
-        <Typography variant="h6" gutterBottom>
-          Take a glimpse into the future of SAP
-        </Typography>
-        <Button
+      <div className="dialog">
+        <Box
           sx={{
-            bgcolor: "background.default",
+            //   bgcolor: "background.default",
+            //   bgcolor: "#000011",
+            bgcolor: "transparent",
+            color: "text.primary",
+            //   borderRadius: 1,
+            p: 3,
+            justifyContent: "center",
+            textAlign: "center",
+            display: "flex",
+          }}
+        >
+          <Typography variant="h6" gutterBottom>
+            Take a glimpse into the future with SAP
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            bgcolor: "transparent",
             // bgcolor: "#000011",
             color: "text.primary",
             //   borderRadius: 1,
             // p: 3,
-
+            // display: "inline-block",
             justifyContent: "center",
+            textAlign: "center",
+            display: "flex-block",
+          }}
+        >
+          <Button variant="contained" onClick={handleClickOpen}>
+            Click here
+          </Button>
+        </Box>
+        {/* <Box
+          sx={{
+            bgcolor: "transparent",
+            color: "text.primary",
+            //   borderRadius: 1,
+            p: 3,
+            // display: "inline-block",
+            justifyContent: "center",
+            textAlign: "center",
             display: "flex",
           }}
-          variant="contained"
-          onClick={handleClickOpen}
         >
-          Click here
-        </Button>
-        {/* <img src={SAP2} alt="SAP2" /> */}
-      </Box>
+          <img src={SAP2} alt="SAP2" />
+        </Box> */}
+      </div>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Concept of Me with a Focus on Mobility</DialogTitle>
 
         <DialogContent>
           <Typography variant="body1" gutterBottom>
-            Creating and training an artificially intelligent digital version of
-            yourself that runs on your mobile device allowing you to work and
-            stay connected from anywhere in the world
+            Imagine creating and training an artificially intelligent digital
+            version of yourself that lives on your mobile devices who can learn
+            and automate your daily tasks and workflows, keeping you connected
+            from anywhere in the world
           </Typography>
           <Divider orientation="horizontal" flexItem>
             <Public
@@ -96,34 +115,34 @@ const MediumDialog = () => {
             />
           </Divider>
           <Typography variant="body1" gutterBottom>
-            Each SAP app running on a persons mobile device will have the
-            ability to learn from a users unique behaviour and over time present
-            data from SAP to them as they would search for it on their own.
-            Through machine learning build a model of the users interactions and
-            preferences on the device itself (what data they search for and when
-            during the day) and use that model to pull data from SAP's API's and
-            present it in a meaningful way as its needed.
+            At SAP we envision our apps running on any device with the
+            capability to learn from a users unique behaviour and, over time,
+            present relevant and concise data from and SAP system to them before
+            they've even asked for it. We believe that through artificail
+            intelligence and machine learning we can help users build a digital
+            model of the their interactions and preferences captured on the
+            devices themselves and use that model to pull data directly from
+            SAP's API's and present it in a meaningful way as and when its
+            needed. All of this without the need for any user interaction at
+            all.
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Using the security built into the mobile device (Apple's FaceID or
-            fingerprint sensor) and use that to form strong security and
-            facilitate proper data authorisation seamlessly. Users privacy is
-            carefully respected as all "learned behaviour" is stored on the
-            device itself and data from SAP's external API's is seamlessly
-            integrated into the users daily workflow.
+            Using the strong and robust security like Apple's FaceID and
+            end-to-end encryption, already built into these mobile devices, we
+            can ensure private and confidential company data is accessed
+            securely and facilitate proper data authorisation seamlessly. We
+            also ensure users privacy is carefully respected as all "learned
+            behaviour" is stored on the device itself and data from SAP's
+            external API's is seamlessly integrated into the users daily
+            workflow.
           </Typography>
-          <Typography variant="body1" gutterBottom>
-            Each app or micro service has the capability for the user to “train”
-            it to automate the mundane tasks for each of these services whilst
-            connecting SAP access and authorization to fingerprint and facial
-            recognition on the devices themselves.
-          </Typography>
-          <Grid container>
+          {/* <Grid container>
             <Grid item xs>
               <Typography variant="subtitle2" gutterBottom>
-                SAP apps will learn from a user’s unique behaviour and over time
+                SAP apps will learn from a users unique behaviour and over time
                 present data from SAP to them from anywhere in the world.
               </Typography>
+              <AssignmentInd />
             </Grid>
             <Divider orientation="vertical" flexItem>
               Seamless Integration
@@ -135,7 +154,7 @@ const MediumDialog = () => {
                 user.
               </Typography>
             </Grid>
-          </Grid>
+          </Grid> */}
         </DialogContent>
         {/* <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
