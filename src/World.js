@@ -3,6 +3,8 @@ import * as d3 from "d3";
 import indexBy from "index-array-by";
 import Globe from "react-globe.gl";
 import MediumDialog from "./Dialog";
+import SAP2 from "./SAP2.png";
+import Box from "@mui/material/Box";
 
 const COUNTRY = "United States";
 const OPACITY = 0.22;
