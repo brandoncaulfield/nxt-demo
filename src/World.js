@@ -5,6 +5,8 @@ import Globe from "react-globe.gl";
 import MediumDialog from "./Dialog";
 import SAP2 from "./SAP2.png";
 import Box from "@mui/material/Box";
+import Backdrop from "@mui/material/Backdrop";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const COUNTRY = "United States";
 const OPACITY = 0.22;
@@ -66,9 +68,11 @@ const World = () => {
   const globeEl = useRef();
   const [airports, setAirports] = useState([]);
   const [routes, setRoutes] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     // load data
+    setIsLoading(true);
     Promise.all([
       fetch(
         "https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat"
@@ -102,6 +106,7 @@ const World = () => {
 
       setAirports(airports);
       setRoutes(filteredRoutes);
+      setIsLoading(false);
     });
   }, []);
 
@@ -112,6 +117,15 @@ const World = () => {
 
   return (
     <>
+      <div>
+        <Backdrop
+          sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+          open={isLoading}
+          //   onClick={handleClose}
+        >
+          <CircularProgress color="inherit" />
+        </Backdrop>
+      </div>
       <MediumDialog />
       <Globe
         ref={globeEl}

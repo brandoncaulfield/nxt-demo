@@ -117,7 +117,7 @@ const MediumDialog = () => {
           <Typography variant="body1" gutterBottom>
             The world is in a constant state of change with companies trying to
             find ways to adapt to this ever-evolving environment in order to
-            keep employee’s happy and attract the highest calibre of staff.
+            keep employees happy and attract the highest calibre of staff.
             Countries worldwide are trialling 4-day work weeks and work from
             home initiatives, meaning there is a need to adapt the way the
             intelligent enterprise approaches the future "mobile friendly" work
@@ -128,8 +128,8 @@ const MediumDialog = () => {
           <Typography variant="body1" gutterBottom>
             At SAP we envision our apps running on any device with the
             capability to learn from a users unique behaviour and, over time,
-            present relevant and concise data from and an SAP system straight to
-            the user before they've even asked for it. We believe that through
+            present relevant and concise data from an SAP system straight to the
+            user before they've even asked for it. We believe that through
             artificial intelligence and machine learning we can help users build
             a digital model of their interactions and preferences, captured on
             the devices themselves, and use that model to pull data directly
