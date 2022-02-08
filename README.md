@@ -4,8 +4,8 @@ This project was used to trial out three.js, WebGL and react.
 
 ## Example
 
-(https://vibrant-kowalevski-4c6ecd.netlify.app/)[Link]
+[Link](https://vibrant-kowalevski-4c6ecd.netlify.app/)
 
 ## Credits
 
-(https://github.com/vasturiano/react-globe.gl)[react-globe.gl]
+[react-globe.gl](https://github.com/vasturiano/react-globe.gl)
