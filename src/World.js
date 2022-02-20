@@ -2,8 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import * as d3 from "d3";
 import indexBy from "index-array-by";
 import Globe from "react-globe.gl";
-import MediumDialog from "./Dialog";
-import SAP2 from "./SAP2.png";
 import Box from "@mui/material/Box";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -126,7 +124,7 @@ const World = () => {
           <CircularProgress color="inherit" />
         </Backdrop>
       </div>
-      <MediumDialog />
+      {/* <MediumDialog /> */}
       <Globe
         ref={globeEl}
         globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
